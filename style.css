@@ -1,0 +1,173 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+body {
+    text-rendering: optimizeLegibility;
+}
+
+/*
+ BARVY
+ svetle sede pozadi      #f5f5f5
+ tmavsi seda             #959595
+ barevny prechod nahore  #06d7c1
+ barevny prechod dole    #50cc49
+ zelena cara             #06d7c1
+ oranzova                #f15f42
+
+ PISMO
+ Rubik - pouzite rezy pisma regular 400 a medium 500
+ https://fonts.google.com/specimen/Rubik
+*/
+
+/* ----- zde zacni psat vlastni css ----- */
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+.zbozi {
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 440px;
+    width: 670px;
+    box-shadow: black 4px 6px 20px;
+    border-radius: 2%;
+}
+
+.vizual {
+    background-color: #06d7c1;
+    background-image: linear-gradient(to bottom, #06d7c1, #50cc49);
+    width: 345px;
+    position: relative;
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;
+}
+
+.logo {
+    margin: 0;
+    padding: 30px 0 0 30px;
+    text-align: left;
+}
+
+
+.slogan {
+    padding: 30px;
+    text-align: left;
+    color: white;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.bota img {
+    position: relative;
+    right: 100px;
+    bottom: 10px;
+    
+}
+
+.detaily {
+    width: 345px;
+}
+
+.cenovka {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    color: white;
+    text-align: right;
+
+}
+
+.cena {
+    font-size: 28px;
+    font-weight: 500;
+
+
+}
+
+.zaruka {
+    font-size: 12px;
+}
+
+.nazev {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    font-weight: bold;
+}
+
+.detaily {
+    text-align: left;
+    margin: 0;
+    padding: 30px;
+    position: relative;
+ 
+}
+
+.popis {
+    padding-bottom: 30px;
+    border-bottom-style: solid;
+    border-bottom-color: #06d7c1;
+    border-bottom-width:  1px;
+    margin: 0;
+    
+}
+
+.produkt {
+    color: gray;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.parametr {
+    margin: 0;
+    padding-top: 30px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.akce a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    background-color: orangered;
+    padding: 10px 15px;
+    border-radius: 8%;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    
+}
+
+.velikosti {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 0;
+}
+
+.velikosti li{
+    display: inline-block;
+
+}
+
+.vybrana {
+    border-style: solid;
+    border-color: orangered;
+    color: orangered;
+    border-width: 1px;
+    border-radius: 50%;
+    padding: 5px;
+
+}
